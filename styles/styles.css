@@ -1,0 +1,44 @@
+/* Основные стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.skill-item {
+    margin-bottom: 1rem;
+}
+
+.progress {
+    height: 8px;
+}
+
+.project-card {
+    background: white;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+        padding: 2rem 0;
+    }
+    
+    .hero img {
+        margin-top: 2rem;
+    }
+}
